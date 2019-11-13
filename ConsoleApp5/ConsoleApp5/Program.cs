@@ -6,7 +6,14 @@ namespace ConsoleApp5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] tallista = new int[5];
+            for(int i = 0; i<5; i++)
+            {
+                tallista[i] = int.Parse(Console.ReadLine());
+            }
+            
+            for (int i = 4; i >= 0; i--)
+                Console.WriteLine(tallista[i]);
         }
     }
 }
